@@ -12,7 +12,8 @@ AlumnoService.factory('AlumApi', function () {
     };
     */
     AlumApi.AddAlumno = function () {
-        cargarCookies();
+        //NINGUNO DE LOS MÉTODOS PARA LAS COOKIES FUNCIONÓ
+            //cargarCookies();
         /*
         setCookie("nombreAlumno", alum.Nombre, 10);
         setCookie("edadAlumno", alum.Edad, 10);

@@ -22,14 +22,14 @@ function getCookie(cname) {
     }
     return "";
 }
-
+/*
 function cargarCookies() {
-    /*var nombre = document.getElementById("nombreAlumno").value;
-    var edad = document.getElementById("edadAlumno").value;
-    var carrera = document.getElementById("carreraAlumno").value;
-    var promedio = document.getElementById("promedioAlumno").value;*/
+    //var nombre = document.getElementById("nombreAlumno").value;
+    //var edad = document.getElementById("edadAlumno").value;
+    //var carrera = document.getElementById("carreraAlumno").value;
+    //var promedio = document.getElementById("promedioAlumno").value;
     setCookie("nombreAlumno", document.getElementById("nombreAlumno").value, 10);
     setCookie("edadAlumno", document.getElementById("edadAlumno").value, 10);
     setCookie("carreraAlumno", document.getElementById("carreraAlumno").value, 10);
     setCookie("promedioAlumno", document.getElementById("promedioAlumno").value, 10);
-}
+}*/

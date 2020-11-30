@@ -23,21 +23,22 @@ MyApp.config(['$routeProvider',
     
 
 MyApp.controller("AddController", function ($scope, AlumApi) {
-   // $scope.message = "en Añadir";
-    /*$scope.addAlumno = function () {
+    //SE TRATARON DE PASAR LOS VALORES COMO PRAMETRO A LA API Y AHÍ DÁRSELOS A LA COOKIE
+    $scope.message = "en Añadir";
+    $scope.addAlumno = function () {
         var alumniToAdd = {
             'Nombre': $scope.name,
             'Edad': $scope.age,
             'Carrera': $scope.carrera,
             'Promedio': $scope.calif
-        };*/
+        };
         AlumApi.AddAlumno()
             .success(function (response) {
                 alert("alumno añadido");
-                /*$scope.name = undefined;
+                $scope.name = undefined;
                 $scope.age = undefined;
                 $scope.carrera = undefined;
-                $scope.calif = undefined;*/
+                $scope.calif = undefined;
             }).
             error(function (response) {
                 alert("error al añadir");
@@ -48,7 +49,7 @@ MyApp.controller("AddController", function ($scope, AlumApi) {
 
 
 MyApp.controller("HomeController", function ($scope, AlumApi) {
-    //$scope.message = "en Home";
+    $scope.message = "en Home";
     /*
     function getAlumnos() {
         AlumApi.getAlumnos().success(function (almns) {
